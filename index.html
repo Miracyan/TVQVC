@@ -1,0 +1,376 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0038)https://jxzhanggg.github.io/Seq2SeqVC/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>TVQVC</title>
+  <style type="text/css">
+  </style>
+</head>
+
+<body>
+  <h2><strong>Audio Samples from "TVQVC: Transformer based Vector Quantization Variational Auto-Encoder with CTC loss for Voice Conversion</strong>"</h2>
+  <h3>Paper:</h3>
+  <p>Paper is under review.</p>
+  <h3>Authors: </h3>
+  Anonymous review
+  <h3>Abstract: </h3>
+  Techniques of voice conversion(VC) aim to modify the speaker identity and style of an utterance while preserving the linguistic content. 
+  Although there are lots of VC method, the SOTA of VC is still cascading ASR and TTS. This study proposed a new structure of vector quantization auto-encoder 
+  based on transformer for non-parallel VC approach, which inspired cascaduing ASR and TTS VC method. 
+  Our method combined ctc-loss and vector quantization to get high-level linguistic information without speaker information. 
+  Objective evaluation and subjective listening tests show the converted speech of proposed VC approach is better than VQVAE baseline model on speech naturalness, speaker similarity and inference speed. 
+  Experimental results on the madarian datasets show that our proposed model can also imporve the speech rhythm of the converted speech.
+  <p>&nbsp;</p>
+  <hr>
+  <p>&nbsp;</p>
+  <strong>Attention please! <font color="red">Seen utterances</font> just represent they appeared in training set. 
+    All of them are training for <font color="red">reconstructing themselves</font>.
+    <font color="blue">MM</font> represents the male of M2VoC Dev set and <font color="blue">MF</font> represents of the female of M2VoC Dev set, they are parallel data. 
+  <font color="blue">Baker</font> represents the female of the databaker open source mandarin dataset.</strong>
+
+  <p>&nbsp;</p>
+  <h3>1. Convert between MM and MF.</h3>
+  <h4> Convert MF to MM: </h4>
+  <table border="1">
+    <tr>
+      <td width="120px">&nbsp;
+
+      </td>
+      <td colspan="1">
+        <blockquote>
+
+          <p align="center">Seen utterance</p>
+
+        </blockquote>
+      </td>
+      <td colspan="1">
+        <blockquote>
+
+          <p align="center">Converted results</p>
+
+        </blockquote>
+      </td>
+      <td colspan="1">
+        <blockquote>
+
+          <p align="center">Unseen utterance</p>
+
+        </blockquote>
+      </td>
+      <td colspan="1">
+        <blockquote>
+
+          <p align="center">Converted results</p>
+
+        </blockquote>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center">GT</div>
+      </td>
+      <td><audio src="wavs/GT/MF-000010.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+      <td><audio src="wavs/GT/MM-000010.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+      <td><audio src="wavs/GT/MF-005000.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+      <td><audio src="wavs/GT/MM-005000.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center">Baseline</div>
+      </td>
+      <td width="149">
+        <audio src="wavs/GT/MF-000010.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio>
+      </td>
+      <td width="147"><audio src="wavs/baseline/baseline-MF-MM-000010.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+      <td width="151"><audio src="wavs/GT/MF-005000.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+      <td width="149"><audio src="wavs/baseline/baseline-MF-MM-005000.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center">Proposed</div>
+      </td>
+      <td width="149">
+        <audio src="wavs/GT/MF-000010.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio>
+      </td>
+      <td width="147"><audio src="wavs/proposed/proposed-MF-MM-000010.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+      <td width="151"><audio src="wavs/GT/MF-005000.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+      <td width="149"><audio src="wavs/proposed/proposed-MF-MM-005000.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+    </tr>
+  </table>
+  <h4> Convert MM to MF: </h4>
+  <table border="1">
+    <tr>
+      <td width="120px">&nbsp;
+
+      </td>
+      <td colspan="1">
+        <blockquote>
+
+          <p align="center">Seen utterance</p>
+
+        </blockquote>
+      </td>
+      <td colspan="1">
+        <blockquote>
+
+          <p align="center">Converted results</p>
+
+        </blockquote>
+      </td>
+      <td colspan="1">
+        <blockquote>
+
+          <p align="center">Unseen utterance</p>
+
+        </blockquote>
+      </td>
+      <td colspan="1">
+        <blockquote>
+
+          <p align="center">Converted results</p>
+
+        </blockquote>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center">GT</div>
+      </td>
+      <td><audio src="wavs/GT/MM-000013.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+      <td><audio src="wavs/GT/MF-000013.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+      <td><audio src="wavs/GT/MM-004982.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+      <td><audio src="wavs/GT/MF-004982.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center">Baseline</div>
+      </td>
+      <td width="149">
+        <audio src="wavs/GT/MM-000013.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio>
+      </td>
+      <td width="147"><audio src="wavs/baseline/baseline-MM-MF-000013.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+      <td width="151"><audio src="wavs/GT/MM-004982.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+      <td width="149"><audio src="wavs/baseline/baseline-MM-MF-004982.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center">Proposed</div>
+      </td>
+      <td width="149">
+        <audio src="wavs/GT/MM-000013.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio>
+      </td>
+      <td width="147"><audio src="wavs/proposed/proposed-MM-MF-000013.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+      <td width="151"><audio src="wavs/GT/MM-004982.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+      <td width="149"><audio src="wavs/proposed/proposed-MM-MF-004982.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <h3>2. Convert MM and MF to Baker.</h3>
+  <h4>MM to Baker:</h4>
+  <table border="1">
+    <tr>
+      <td width="120">
+        <div align="center">Methods</div>
+      </td>
+      <td colspan="1">
+        <p align="center">Seen utterance</p>
+      </td>
+      <td colspan="1">
+        <p align="center">Converted results</p>
+      </td>
+      <td colspan="1">
+        <p align="center">Unseen utterance</p>
+      </td>
+      <td colspan="1">
+        <p align="center">Converted results</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center">Baseline</div>
+      </td>
+      <td width="169"><audio src="wavs/GT/MM-000020.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+      <td width="187"><audio src="wavs/baseline/baseline-MM-baker-000020.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+      <td width="155"><audio src="wavs/GT/MM-004986.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+      <td width="157"><audio src="wavs/baseline/baseline-MM-baker-004986.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center">Proposed</div>
+      </td>
+      <td><audio src="wavs/GT/MM-000020.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+      <td><audio src="wavs/proposed/proposed-MM-baker-000020.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+      <td><audio src="wavs/GT/MM-004986.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+      <td><audio src="wavs/proposed/proposed-MM-baker-004986.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+    </tr>
+  </table>
+  <h4>MF to Baker:</h4>
+  <table border="1">
+    <tr>
+      <td width="120">
+        <div align="center">Methods</div>
+      </td>
+      <td colspan="1">
+        <p align="center">Seen utterance</p>
+      </td>
+      <td colspan="1">
+        <p align="center">Converted results</p>
+      </td>
+      <td colspan="1">
+        <p align="center">Unseen utterance</p>
+      </td>
+      <td colspan="1">
+        <p align="center">Converted results</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center">Baseline</div>
+      </td>
+      <td width="169"><audio src="wavs/GT/MF-000020.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+      <td width="187"><audio src="wavs/baseline/baseline-MF-baker-000020.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+      <td width="155"><audio src="wavs/GT/MF-004986.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+      <td width="157"><audio src="wavs/baseline/baseline-MF-baker-004986.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center">Proposed</div>
+      </td>
+      <td><audio src="wavs/GT/MF-000020.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+      <td><audio src="wavs/proposed/proposed-MF-baker-000020.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+      <td><audio src="wavs/GT/MF-004986.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+      <td><audio src="wavs/proposed/proposed-MF-baker-004986.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <h3>3. Ablation studies</h3>
+  <table border="1">
+    <tr>
+      <td width="140">
+        <div align="center">Methods</div>
+      </td>
+      <td colspan="2">
+        <div align="center">MM-to-Baker</div>
+      </td>
+      <td colspan="2">
+        <div align="center">MF-to-Baker</div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"><em>Proposed</em></div>
+      </td>
+      <td width="156"><audio src="wavs/abalation/MM-004997.wav" controls="controls"> Your
+          browser does not support the audio tag. </audio></td>
+      <td width="153"><audio src="wavs/abalation/proposed-MM-baker-004997.wav" controls="controls"> Your
+          browser does not support the audio tag. </audio></td>
+      <td width="149"><audio src="wavs/abalation/MF-004998.wav" controls="controls"> Your
+          browser does not support the audio tag. </audio></td>
+      <td width="173"><audio src="wavs/abalation/proposed-MF-baker-004998.wav" controls="controls"> Your
+          browser does not support the audio tag. </audio></td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"><em>-f0</em></div>
+      </td>
+      <td width="156"><audio src="wavs/abalation/MM-004997.wav" controls="controls"> Your
+          browser does not support the audio tag. </audio></td>
+      <td width="153"><audio src="wavs/abalation/wo-f0-MM-baker-004997.wav" controls="controls"> Your
+          browser does not support the audio tag. </audio></td>
+      <td width="149"><audio src="wavs/abalation/MF-004998.wav" controls="controls"> Your
+          browser does not support the audio tag. </audio></td>
+      <td width="173"><audio src="wavs/abalation/wo-f0-MF-baker-004998.wav" controls="controls"> Your
+          browser does not support the audio tag. </audio></td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center"><em>-vq</em></div>
+      </td>
+      <td width="156"><audio src="wavs/abalation/MM-004997.wav" controls="controls"> Your
+          browser does not support the audio tag. </audio></td>
+      <td width="153"><audio src="wavs/abalation/wo-vq-MM-baker-004997_generated_e2e.wav" controls="controls"> Your
+          browser does not support the audio tag. </audio></td>
+      <td width="149"><audio src="wavs/abalation/MF-004998.wav" controls="controls"> Your
+          browser does not support the audio tag. </audio></td>
+      <td width="173"><audio src="wavs/abalation/wo-vq-MF-baker-004998_generated_e2e.wav" controls="controls"> Your
+          browser does not support the audio tag. </audio></td>
+    </tr>
+  </table>
+  <p>&quot;<em>-f0</em>&quot; represents the proposed model without quantization fundemental frequency. 
+    &quot;<em>-vq</em>&quot; represents the proposed model without vector quantization layer. 
+    We can observe that &quot;<em>-f0</em>&quot; has lower naturalness, and &quot;<em>-vq</em>&quot; has lower speaker similarity.
+  </p>
+  <p>&nbsp;</p>
+
+
+</body>
+
+</html>
