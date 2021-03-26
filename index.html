@@ -12,18 +12,18 @@
 </head>
 
 <body>
-  <h2><strong>Audio Samples from "TVQVC: Transformer based Vector Quantization Variational Auto-Encoder with CTC loss for Voice Conversion</strong>"</h2>
+  <h2><strong>Audio Samples from "TVQVC: Transformer based Vector Quantization Variational Autoencoder with CTC loss for Voice Conversion</strong>"</h2>
   <h3>Paper:</h3>
   <p>Paper is under review.</p>
   <h3>Authors: </h3>
   Anonymous review
   <h3>Abstract: </h3>
   Techniques of voice conversion(VC) aim to modify the speaker identity and style of an utterance while preserving the linguistic content. 
-  Although there are lots of VC method, the SOTA of VC is still cascading ASR and TTS. This study proposed a new structure of vector quantization auto-encoder 
-  based on transformer for non-parallel VC approach, which inspired cascaduing ASR and TTS VC method. 
-  Our method combined ctc-loss and vector quantization to get high-level linguistic information without speaker information. 
-  Objective evaluation and subjective listening tests show the converted speech of proposed VC approach is better than VQVAE baseline model on speech naturalness, speaker similarity and inference speed. 
-  Experimental results on the madarian datasets show that our proposed model can also imporve the speech rhythm of the converted speech.
+  Although there are lots of VC methods, the SOTA of VC is still cascading ASR and TTS. 
+  This study proposed a new structure of vector quantization auto-encoder based on transformer with ctc for non-parallel VC, 
+  which inspired by cascading ASR and TTS VC method. Our method combined ctc loss and vector quantization to get high-level linguistic information without speaker information. 
+  Objective evaluation and subjective listening tests show the converted speech of proposed VC approach is better than baseline model on speech naturalness, 
+  speaker similarity and inference speed. Experimental results on the mandarin datasets show that our proposed model can also improve the speech rhythm of the converted speech.
   <p>&nbsp;</p>
   <hr>
   <p>&nbsp;</p>
@@ -390,7 +390,7 @@
           browser does not support the audio tag. </audio></td>
     </tr>
   </table>
-  <p>&quot;<em>-f0</em>&quot; represents the proposed model without quantization fundemental frequency. 
+  <p>&quot;<em>-f0</em>&quot; represents the proposed model without quantization fundamental frequency. 
     &quot;<em>-vq</em>&quot; represents the proposed model without vector quantization layer. 
     We can observe that &quot;<em>-f0</em>&quot; has lower naturalness, and &quot;<em>-vq</em>&quot; has lower speaker similarity.
   </p>
