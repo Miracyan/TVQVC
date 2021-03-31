@@ -12,19 +12,19 @@
 </head>
 
 <body>
-  <h2><strong>Audio Samples from "TVQVC: Transformer based Vector Quantization Variational Autoencoder with CTC loss for Voice Conversion</strong>"</h2>
+  <h2><strong>Audio Samples from "TVQVC: Transformer based Vector Quantized Variational Autoencoder with CTC loss for Voice Conversion</strong>"</h2>
   <h3>Paper:</h3>
   <p>Paper is under review.</p>
   <h3>Authors: </h3>
   Anonymous review
   <h3>Abstract: </h3>
   Techniques of voice conversion(VC) aim to modify the speaker identity and style of an utterance while preserving the linguistic content. 
-  Although there are lots of VC methods, state of the art of VC is still cascading ASR and TTS. 
-  This paper proposed a new structure of vector quantization autoencoder based on transformer with ctc loss for non-parallel VC, 
+  Although there are lots of VC methods, the state of the art of VC is still cascading ASR and TTS. 
+  This paper proposed a new structure of vector-quantization autoencoder based on transformer with ctc loss for non-parallel VC, 
   which inspired by cascading ASR and TTS VC method. 
   Our method combined ctc loss and vector quantization to get high-level linguistic information without speaker information. 
-  Objective evaluation and subjective listening tests show the converted speech of proposed VC approach is 
-  better than baseline model on naturalness and speaker similarity. 
+  Objective evaluation and subjective listening tests show the converted speech of proposed VC approach is better than 
+  baseline model on naturalness and speaker similarity. 
   Experimental results on the mandarin datasets show that our proposed model can also improve the rhythm of the converted speech.
   <p>&nbsp;</p>
   <hr>
@@ -90,7 +90,7 @@
     </tr>
     <tr>
       <td>
-        <div align="center">Baseline</div>
+        <div align="center">VQVAE</div>
       </td>
       <td width="149">
         <audio src="wavs/GT/MF-000010.wav" controls="controls">
@@ -104,6 +104,25 @@
           Your browser does not support the audio tag.
         </audio></td>
       <td width="149"><audio src="wavs/baseline/baseline-MF-MM-005000.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center">PPGVC</div>
+      </td>
+      <td width="149">
+        <audio src="wavs/GT/MF-000010.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio>
+      </td>
+      <td width="147"><audio src="wavs/ppgvc/MF-MM-000010.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+      <td width="151"><audio src="wavs/GT/MF-005000.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+      <td width="149"><audio src="wavs/ppgvc/MF-MM-005000.wav" controls="controls">
           Your browser does not support the audio tag.
         </audio></td>
     </tr>
@@ -181,7 +200,7 @@
     </tr>
     <tr>
       <td>
-        <div align="center">Baseline</div>
+        <div align="center">VQVAE</div>
       </td>
       <td width="149">
         <audio src="wavs/GT/MM-000013.wav" controls="controls">
@@ -195,6 +214,25 @@
           Your browser does not support the audio tag.
         </audio></td>
       <td width="149"><audio src="wavs/baseline/baseline-MM-MF-004990.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center">PPGVC</div>
+      </td>
+      <td width="149">
+        <audio src="wavs/GT/MM-000013.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio>
+      </td>
+      <td width="147"><audio src="wavs/ppgvc/MM-MF-000013.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+      <td width="151"><audio src="wavs/GT/MM-004990.wav" controls="controls">
+          Your browser does not support the audio tag.
+        </audio></td>
+      <td width="149"><audio src="wavs/ppgvc/MM-MF-004990.wav" controls="controls">
           Your browser does not support the audio tag.
         </audio></td>
     </tr>
@@ -267,7 +305,7 @@
     </tr>
     <tr>
       <td>
-        <div align="center">Baseline</div>
+        <div align="center">VQVAE</div>
       </td>
       <td width="169"><audio src="wavs/GT/MM-000020.wav" controls="controls"> Your browser does not
           support the audio tag. </audio></td>
@@ -276,6 +314,19 @@
       <td width="155"><audio src="wavs/GT/MM-004986.wav" controls="controls"> Your browser does not
           support the audio tag. </audio></td>
       <td width="157"><audio src="wavs/baseline/baseline-MM-baker-004986.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center">PPGVC</div>
+      </td>
+      <td width="169"><audio src="wavs/GT/MM-000020.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+      <td width="187"><audio src="wavs/ppgvc/MM-baker-000020.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+      <td width="155"><audio src="wavs/GT/MM-004986.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+      <td width="157"><audio src="wavs/ppgvc/MM-baker-004986.wav" controls="controls"> Your browser does not
           support the audio tag. </audio></td>
     </tr>
     <tr>
@@ -313,7 +364,7 @@
     </tr>
     <tr>
       <td>
-        <div align="center">Baseline</div>
+        <div align="center">VQVAE</div>
       </td>
       <td width="169"><audio src="wavs/GT/MF-000020.wav" controls="controls"> Your browser does not
           support the audio tag. </audio></td>
@@ -322,6 +373,19 @@
       <td width="155"><audio src="wavs/GT/MF-004986.wav" controls="controls"> Your browser does not
           support the audio tag. </audio></td>
       <td width="157"><audio src="wavs/baseline/baseline-MF-baker-004986.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+    </tr>
+    <tr>
+      <td>
+        <div align="center">PPGVC</div>
+      </td>
+      <td width="169"><audio src="wavs/GT/MF-000020.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+      <td width="187"><audio src="wavs/ppgvc/MF-baker-000020.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+      <td width="155"><audio src="wavs/GT/MF-004986.wav" controls="controls"> Your browser does not
+          support the audio tag. </audio></td>
+      <td width="157"><audio src="wavs/ppgvc/MF-baker-004986.wav" controls="controls"> Your browser does not
           support the audio tag. </audio></td>
     </tr>
     <tr>
